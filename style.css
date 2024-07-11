@@ -9,7 +9,7 @@ body {
     height: 30vh;
     margin: auto;
     position: relative;
-    top: var(50% - 15vh);
+    top: 20%;
     border: 2px gray solid ;
     border-radius: 10px;
     padding: 20px;
