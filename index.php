@@ -9,17 +9,21 @@
 </head>
 
 <body>
-    <form action="index.php" method="post">
-        <input type="text" name="name" id="name">
-        <input type="submit" value="Submit">
-    </form>
+    <div class="container">
+        <h2 style="text-align: center;">PHP Practice</h2>
+        <form action="index.php" method="post">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name">
+            <input type="submit" value="Submit">
+        </form>
+        <br />
+        <?php
+        if (isset($_POST['name'])) {
+            $name = $_POST['name'];
+            echo "Hello $name world";
+        }
+        ?>
+    </div>
 </body>
 
 </html>
-
-<?php
-    if(isset($_POST['name'])){
-        $name = $_POST['name'];
-        echo "Hello $name world";
-    }
-?>
