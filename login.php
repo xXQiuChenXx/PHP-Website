@@ -18,10 +18,8 @@ if ($conn->connect_error) {
     echo "Connected successfully";
 }
 
-// Use $conn for database operations
-// Example: $result = $conn->query("SELECT * FROM your_table");
+$result = $conn->query("SELECT * FROM your_table");
 
-// Close the connection when done
 $conn->close();
 ?>
 
