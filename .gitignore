@@ -2,3 +2,4 @@ config.php
 ./config.php
 
 login-page/config.php
+login-page/vendor
